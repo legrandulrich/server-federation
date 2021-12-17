@@ -3,9 +3,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(process.env.PORT||4000);
+  await app.listen(process.env.PORT);
   console.log(
-    ` Federated Server Application is running at: ${await app.getUrl()}`,
+    ` 🚀🚀🚀🚀 - ${new Date().toLocaleString()} - Federated Server Application is running at: ${await app.getUrl()}`,
   );
 }
 bootstrap();
